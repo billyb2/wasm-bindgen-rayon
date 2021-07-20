@@ -1,8 +1,4 @@
-#![cfg_attr(
-    feature = "nightly",
-    feature(external_doc),
-    doc(include = "../README.md")
-)]
+#[doc = include_str!("../README.md")]
 #![cfg_attr(
     not(feature = "nightly"),
     doc = "Check out documentation in [README.md](https://github.com/GoogleChromeLabs/wasm-bindgen-rayon)."
